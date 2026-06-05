@@ -7,6 +7,5 @@ node_modules/
 *.key
 *.mobileprovision
 web-build/
-dist/
 backend/node_modules/
 backend/.env

@@ -6,8 +6,8 @@ export default function Logo({ size = 80, showText = true }) {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/52210.jpg')}
-        style={{ width: size, height: size * 1.4 }}
+        source={require('../assets/logo.png')}
+        style={{ width: size, height: size * 1.2 }}
         resizeMode="contain"
       />
 
