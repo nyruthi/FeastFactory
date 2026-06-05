@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Colors } from '../theme/colors';
+import Logo from '../components/Logo';
 
 export default function SplashScreen({ navigation }) {
   const scale = useRef(new Animated.Value(0.7)).current;
@@ -19,9 +20,7 @@ export default function SplashScreen({ navigation }) {
   return (
     <LinearGradient colors={[Colors.primaryDark, Colors.primary, '#A52020']} style={st.root}>
       <Animated.View style={{ transform: [{ scale }], opacity }}>
-        <View style={st.logoBox}>
-          <Text style={st.logoText}>FF</Text>
-        </View>
+        <Logo size={160} showText={false} />
         <Text style={st.title}>The Feast Factory</Text>
         <Text style={st.sub}>India's Premier Food Catering App</Text>
       </Animated.View>

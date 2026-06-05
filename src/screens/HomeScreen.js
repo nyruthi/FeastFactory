@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Colors } from '../theme/colors';
 import { useCart } from '../context/CartContext';
+import Logo from '../components/Logo';
 
 const { width } = Dimensions.get('window');
 
@@ -33,7 +34,7 @@ export default function HomeScreen({ navigation }) {
         <SafeAreaView edges={['top']}>
           <View style={st.headerInner}>
             <View style={st.headerLeft}>
-              <View style={st.logoBox}><Text style={st.logoTxt}>FF</Text></View>
+              <Logo size={52} showText={false} />
               <View>
                 <Text style={st.headerTitle}>The Feast Factory</Text>
                 <Text style={st.headerSub}>📍 Hyderabad, India</Text>

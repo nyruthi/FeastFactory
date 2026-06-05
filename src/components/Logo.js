@@ -1,23 +1,47 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { Colors } from '../theme/colors';
 
-export default function Logo({ size = 40 }) {
+export default function Logo({ size = 80, showText = true }) {
   return (
-    <View style={[styles.container, { width: size, height: size, borderRadius: size / 2 }]}>
-      <Text style={[styles.text, { fontSize: size * 0.45 }]}>FF</Text>
+    <View style={styles.container}>
+      <Image
+        source={require('../assets/52210.jpg')}
+        style={{ width: size, height: size * 1.4 }}
+        resizeMode="contain"
+      />
+
+      {showText && (
+        <View style={styles.textContainer}>
+          <Text style={styles.mainText}>THE FEAST FACTORY</Text>
+          <Text style={styles.tagline}>GREAT FOOD. LASTING IMPRESSIONS.</Text>
+        </View>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.secondary,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
-    fontWeight: '900',
-    color: Colors.primaryDark,
+  textContainer: {
+    alignItems: 'center',
+    marginTop: 8,
+  },
+  mainText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: Colors.secondary,
+    letterSpacing: 2,
+    textAlign: 'center',
+  },
+  tagline: {
+    fontSize: 10,
+    color: Colors.secondary,
+    letterSpacing: 1,
+    marginTop: 4,
+    textAlign: 'center',
   },
 });

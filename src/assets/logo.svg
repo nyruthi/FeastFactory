@@ -1,0 +1,60 @@
+<svg viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#F4D03F" stopOpacity="1" />
+      <stop offset="100%" stopColor="#DAA520" stopOpacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="50" cy="40" r="32" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+
+  <!-- Dome - top arc -->
+  <path d="M 32 40 A 18 18 0 0 1 68 40" fill="url(#goldGradient)" opacity="0.85" />
+
+  <!-- Dome outline -->
+  <path d="M 32 40 A 18 18 0 0 1 68 40" fill="none" stroke="url(#goldGradient)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Flame 1 - bottom -->
+  <path d="M 50 8 Q 48 2 50 0 Q 52 2 50 8" fill="url(#goldGradient)" />
+
+  <!-- Flame 2 - top -->
+  <path d="M 50 5 Q 47 -2 50 -5 Q 53 -2 50 5" fill="url(#goldGradient)" opacity="0.9" />
+
+  <!-- Dome knob -->
+  <circle cx="50" cy="40" r="3" fill="url(#goldGradient)" />
+
+  <!-- Dome base horizontal line -->
+  <line x1="32" y1="42" x2="68" y2="42" stroke="url(#goldGradient)" stroke-width="2" />
+
+  <!-- Left hand -->
+  <path d="M 30 45 Q 22 55 30 65 Q 35 60 38 50 Z" fill="url(#goldGradient)" opacity="0.8" />
+
+  <!-- Left hand outline -->
+  <path d="M 30 45 Q 22 55 30 65 Q 35 60 38 50 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+
+  <!-- Right hand -->
+  <path d="M 70 45 Q 78 55 70 65 Q 65 60 62 50 Z" fill="url(#goldGradient)" opacity="0.8" />
+
+  <!-- Right hand outline -->
+  <path d="M 70 45 Q 78 55 70 65 Q 65 60 62 50 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+
+  <!-- Decorative dots -->
+  <circle cx="24" cy="54" r="2" fill="url(#goldGradient)" />
+  <circle cx="76" cy="54" r="2" fill="url(#goldGradient)" />
+
+  <!-- TFF Text -->
+  <!-- T -->
+  <line x1="44" y1="32" x2="44" y2="48" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="40" y1="32" x2="48" y2="32" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- F -->
+  <line x1="50" y1="32" x2="50" y2="48" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="50" y1="32" x2="56" y2="32" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="50" y1="40" x2="55" y2="40" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- F -->
+  <line x1="58" y1="32" x2="58" y2="48" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="58" y1="32" x2="64" y2="32" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="58" y1="40" x2="63" y2="40" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round" />
+</svg>
