@@ -6,7 +6,6 @@ node_modules/
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
 web-build/
 dist/
 backend/node_modules/
