@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "The Feast Factory",
+    "slug": "feast-factory",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#8B1A1A",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.feastfactory.app"
+    },
+    "android": {
+      "package": "com.feastfactory.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#8B1A1A"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-asset",
+      "expo-web-browser"
+    ]
+  }
+}
